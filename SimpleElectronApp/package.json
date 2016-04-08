@@ -1,0 +1,35 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack:osx": "electron-packager . MyApp --platform=darwin --arch=x64 --version=0.36.7 --icon=assets/MyApp.icns --out=dist --ignore=dist",
+    "build:osx": "npm run pack:osx && electron-builder dist/osx/MyApp.app --platform=osx --out=\"dist/osx\" --config=config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/atom/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "devDependencies": {
+    "electron-packager": "^5.2.1",
+    "electron-prebuilt": "^0.36.0",
+    "electron-rebuild": "^1.1.3"
+  },
+  "dependencies": {
+    "electron-builder": "^2.7.2"
+  }
+}
