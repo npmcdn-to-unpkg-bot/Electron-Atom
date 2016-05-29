@@ -37,8 +37,10 @@ npm run start
 
 
 Make Electon Package
-electron-packager . <AppName> --platform=win32 --arch=x64 --overwrite --version=0.37.4
 
+`
+electron-packager . <AppName> --platform=win32 --arch=x64 --overwrite --version=0.37.4
+`
 
 ## Debug Electron using [Devtron](http://electron.atom.io/devtron/)
 
